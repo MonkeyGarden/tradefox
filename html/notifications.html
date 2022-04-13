@@ -235,7 +235,7 @@
 								<span class="navigation__text">Магазин роботов</span>
 							</a>
 						</li>
-						<li class="navigation__item active">
+						<li class="navigation__item">
 							<a href="../html/news.html" class="navigation__link">
 								<span class="navigation__icon-block">
 									<img src="../img/news-icon.svg" alt="" class="navigation__icon">
@@ -243,7 +243,7 @@
 								<span class="navigation__text">Новости</span>
 							</a>
 						</li>
-						<li class="navigation__item">
+						<li class="navigation__item active">
 							<a href="../html/support.html" class="navigation__link new">
 								<span class="navigation__icon-block">
 									<img src="../img/support-icon.svg" alt="" class="navigation__icon">
@@ -283,136 +283,237 @@
 			<div class="basic-content-wrp">
 				<div class="row">
 					<div class="basic-content">
-						<div class="col-md-8 lefts-side-one-news">
+						<div class="col-md-8 lefts-side-robots-info">
 							<div class="basic-title-row">
-								<a href="" class="back-to-login back">Назад</a>
+								<h2 class="second-level-title">Уведомления</h2>
 							</div>
-							<div class="one-news-content-wrp">
-								<div class="one-news-content">
-									<div class="date-and-source">
-										<span class="date-and-source__date">24 ноября 2020 г.</span>
-										<span class="date-and-source__source">Иточник: <a href="">FINMARKET.RU</a></span>
+							<div role="tabpanel" class="notification-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+										<a href="#new" aria-controls="home" role="tab" data-toggle="tab">Непрочитанные</a>
+									</li>
+									<li role="presentation">
+										<a href="#old" aria-controls="tab" role="tab" data-toggle="tab">Прочитанные</a>
+									</li>
+									<li role="presentation">
+										<a href="#all" aria-controls="tab" role="tab" data-toggle="tab">Все</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="new">
+										<ul class="notifications-list">
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-support">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-support.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Ваша заявка №102403 обработана сотрудником технической
+															поддержки
+														</p>
+														<p class="notifications-list__time-or-descript">12 мин</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-server">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-support">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-support.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Ваша заявка №102403 обработана сотрудником технической
+															поддержки
+														</p>
+														<p class="notifications-list__time-or-descript">12 мин</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-server">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-server">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+										</ul>
 									</div>
-									<h2 class="one-news-content__title">Акции развивающихся рынков в плюсе, валюты просели</h2>
-									<div class="one-news-image-wrp">
-										<img src="../img/news-image.png" alt="" class="one-news-image-wrp__image">
+									<div role="tabpanel" class="tab-pane" id="old">
+										<ul class="notifications-list">
+											<li class="notifications-list__item">
+												<div class="notifications-list__link from-support readed">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-support.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Ваша заявка №102403 обработана сотрудником технической
+															поддержки
+														</p>
+														<p class="notifications-list__time-or-descript">12 мин</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link from-server readed">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link from-support readed">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-support.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Ваша заявка №102403 обработана сотрудником технической
+															поддержки
+														</p>
+														<p class="notifications-list__time-or-descript">12 мин</p>
+													</span>
+												</div>
+											</li>
+										</ul>
 									</div>
-									<div class="one-news-text">
-										<p class="one-news-text__text">(Рейтер) - Валюты развивающихся рынков Европы, Ближнего Востока и
-											Африки снизились во вторник, в то время как акции
-											выросли вслед за азиатскими индексами на фоне некоторого оптимизма после выписки из больницы
-											президента США Дональда
-											Трампа.</p>
-										<p class="one-news-text__text">Рост Уолл-стрит накануне также усилил аппетит к акциям, так как рынки
-											ожидают прогресса в переговорах о новых стимулах в
-											США.</p>
-										<p class="one-news-text__text">Индекс акций развивающихся рынков прибавил 0,6% до более чем
-											двухнедельного максимума.</p>
-										<p class="one-news-text__text">Однако подъем был ограниченным, поскольку резкое увеличение числа
-											случаев коронавируса в мире вызвало опасения о новых
-											ограничительных мерах.</p>
-										<p class="one-news-text__text">"Обнадеживающие новости, скорее всего, продолжат оказывать поддержку
-											акциям и более широким настроениям рынка. Тем не
-											менее, мы все еще не говорим о долгосрочном восстановлении ... Число случаев коронавируса
-											продолжает расти быстрыми
-											темпами", - говорится в записке Шараламбоса Писсуроса, старшего аналитика рынка в JFD Group.</p>
-										<p class="one-news-text__text">Южноафриканский ранд просел примерно на 0,4%, прервав пятидневную
-											череду роста в понедельник. Акции ЮАР немного
-											укрепились.</p>
-										<p class="one-news-text__text">Венгерский форинт был малоподвижен после того, как данные показали,
-											что промышленное производство страны в августе упало
-											на 2,1% в годовом исчислении.</p>
-										<p class="one-news-text__text">Венгерский фондовый индекс сбавил 0,3%. Акции энергетической группы
-											MOL подешевели на 1,8% после новости о том, что
-											около 200 рабочих одного из заводов компании заразились коронавирусом.</p>
-										<p class="one-news-text__text descript">(Амбар Уоррик в Бангалоре, перевела Елизавета Журавлева.
-											Редактор Анна Козлова)</p>
+									<div role="tabpanel" class="tab-pane" id="all">
+										<ul class="notifications-list">
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-support">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-support.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Ваша заявка №102403 обработана сотрудником технической
+															поддержки
+														</p>
+														<p class="notifications-list__time-or-descript">12 мин</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link from-server readed">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link from-support readed">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-support.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Ваша заявка №102403 обработана сотрудником технической
+															поддержки
+														</p>
+														<p class="notifications-list__time-or-descript">12 мин</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-server">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-support">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-support.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Ваша заявка №102403 обработана сотрудником технической
+															поддержки
+														</p>
+														<p class="notifications-list__time-or-descript">12 мин</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-server">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+											<li class="notifications-list__item">
+												<div class="notifications-list__link new from-server">
+													<span class="notifications-list__image-wrp">
+														<img src="../img/notification-server.svg" alt="" class="notifications-list__image">
+													</span>
+													<span class="notifications-list__content">
+														<p class="notifications-list__text">Срок действия сервера №1024 заканчива-ется 13 января
+															2021 года</p>
+														<p class="notifications-list__time-or-descript">3 ч</p>
+													</span>
+												</div>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 right-side-other-news">
-							<div class="basic-subtitle-row">
-								<h3 class="three-level-title">Другие новости</h3>
-							</div>
-							<div class="other-news-wrp">
-								<a href="" class="news-item">
-									<div class="news-item__image-wrp">
-										<img src="../img/news-image.png" alt="" class="news-item__image">
-									</div>
-									<div class="news-item__content">
-										<span class="news-item__date">24 ноября 2020 г.</span>
-										<h3 class="news-item__name">Средний курс доллара США
-											со сроком расчетов "завтра" по итогам торгов составил 73,6724 руб.</h3>
-										<p class="news-item__text">Средневзвешенный курс доллара США со сроком расчетов "завтра" по
-											итогам
-											торгов Московской биржи понизился на 9600
-											пунктов (1 пункт соответствует 0,01 коп.) и составил 73,6724 руб. ...</p>
-										<span class="news-item__read-more">Читать далее</span>
-									</div>
-								</a>
-								<a href="" class="news-item">
-									<div class="news-item__image-wrp">
-										<img src="../img/news-image.png" alt="" class="news-item__image">
-									</div>
-									<div class="news-item__content">
-										<span class="news-item__date">24 ноября 2020 г.</span>
-										<h3 class="news-item__name">Средний курс доллара США
-											со сроком расчетов "завтра" по итогам торгов составил 73,6724 руб.</h3>
-										<p class="news-item__text">Средневзвешенный курс доллара США со сроком расчетов "завтра" по
-											итогам
-											торгов Московской биржи понизился на 9600
-											пунктов (1 пункт соответствует 0,01 коп.) и составил 73,6724 руб. ...</p>
-										<span class="news-item__read-more">Читать далее</span>
-									</div>
-								</a>
-								<a href="" class="news-item">
-									<div class="news-item__image-wrp">
-										<img src="../img/news-image.png" alt="" class="news-item__image">
-									</div>
-									<div class="news-item__content">
-										<span class="news-item__date">24 ноября 2020 г.</span>
-										<h3 class="news-item__name">Средний курс доллара США
-											со сроком расчетов "завтра" по итогам торгов составил 73,6724 руб.</h3>
-										<p class="news-item__text">Средневзвешенный курс доллара США со сроком расчетов "завтра" по
-											итогам
-											торгов Московской биржи понизился на 9600
-											пунктов (1 пункт соответствует 0,01 коп.) и составил 73,6724 руб. ...</p>
-										<span class="news-item__read-more">Читать далее</span>
-									</div>
-								</a>
-								<a href="" class="news-item">
-									<div class="news-item__image-wrp">
-										<img src="../img/news-image.png" alt="" class="news-item__image">
-									</div>
-									<div class="news-item__content">
-										<span class="news-item__date">24 ноября 2020 г.</span>
-										<h3 class="news-item__name">Средний курс доллара США
-											со сроком расчетов "завтра" по итогам торгов составил 73,6724 руб.</h3>
-										<p class="news-item__text">Средневзвешенный курс доллара США со сроком расчетов "завтра" по
-											итогам
-											торгов Московской биржи понизился на 9600
-											пунктов (1 пункт соответствует 0,01 коп.) и составил 73,6724 руб. ...</p>
-										<span class="news-item__read-more">Читать далее</span>
-									</div>
-								</a>
-								<a href="" class="news-item">
-									<div class="news-item__image-wrp">
-										<img src="../img/news-image.png" alt="" class="news-item__image">
-									</div>
-									<div class="news-item__content">
-										<span class="news-item__date">24 ноября 2020 г.</span>
-										<h3 class="news-item__name">Средний курс доллара США
-											со сроком расчетов "завтра" по итогам торгов составил 73,6724 руб.</h3>
-										<p class="news-item__text">Средневзвешенный курс доллара США со сроком расчетов "завтра" по
-											итогам
-											торгов Московской биржи понизился на 9600
-											пунктов (1 пункт соответствует 0,01 коп.) и составил 73,6724 руб. ...</p>
-										<span class="news-item__read-more">Читать далее</span>
-									</div>
-								</a>
-								<div class="show-more-row">
-									<a href="" class="basic-button empty">Все новости</a>
+						<div class="col-md-4 right-side-info">
+							<div class="notifications-in-page">
+								<div class="get-percent-banner-wrp">
+									<a href="" class="get-percent-banner">
+										<img src="../img/percent-banner.png" alt="" class="get-percent-banner__image-desctop">
+										<span class="get-percent-banner__label">срок акции неограничен</span>
+										<h2 class="get-percent-banner__title">Получи процент
+											от покупки роботов</h2>
+										<p class="get-percent-banner__text">Пригласи друга в Trade Fox и получи деньги на свой счет с его
+											покупок</p>
+										<span class="get-percent-banner__details">ПОДРОБНЕЕ</span>
+									</a>
 								</div>
 							</div>
 						</div>
